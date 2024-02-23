@@ -1,0 +1,82 @@
+body {
+  background-image: url(/resources/fotos/backgroundD.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.btn-custom {
+  border: 1px solid #f7e018;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f7e018;
+  padding: 7px 7px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn-custom:hover {
+  background-color: #f7e018;
+  color: #000000;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h2 {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+p {
+  font-size: 20px;
+}
+
+b {
+  color: #f7e018;
+}
+
+@media (max-width: 730px) {
+  h2 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 15px;
+  }
+  span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 630px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 530px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+  span {
+    font-size: 12px;
+  }
+  body {
+    background-image: url(/resources/fotos/backgroundM.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .btn-custom {
+    padding: 4px 4px;
+    font-size: 12px;
+  }
+}
+
+.container-main {
+  height: 90vh;
+}
