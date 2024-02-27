@@ -4,6 +4,12 @@ body {
   background-repeat: no-repeat;
   overflow: hidden;
 }
+
+html,
+body {
+  height: 100%;
+}
+
 .btn-custom {
   border: 1px solid #f7e018;
   background-color: rgba(255, 255, 255, 0);
@@ -16,11 +22,6 @@ body {
 .btn-custom:hover {
   background-color: #f7e018;
   color: #000000;
-}
-
-html,
-body {
-  height: 100%;
 }
 
 h2 {

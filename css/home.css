@@ -1,0 +1,130 @@
+.destacada {
+  height: 50vh;
+  object-fit: cover;
+}
+
+.destacada-container {
+  position: relative;
+}
+
+.texto-destacada {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 1;
+  max-width: 50%;
+  height: 50vh;
+}
+
+h2 {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+h5 {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  font-size: 15px;
+}
+
+.btn-custom {
+  border: 1px solid #f7e018;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f7e018;
+  padding: 6px 6px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.btn-custom:hover {
+  background-color: #f7e018;
+  color: #000000;
+}
+
+.card-img {
+  border-radius: 5px;
+  height: 45vh;
+  object-fit: cover;
+}
+
+.card-image-container {
+  position: relative;
+  display: inline-block;
+}
+.card-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card-image-container:hover .card-image-overlay {
+  opacity: 1;
+}
+
+@media (max-width: 730px) {
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .btn-custom {
+    font-size: 10px;
+    padding: 4px 4px;
+  }
+  .texto-destacada {
+    height: 35vh;
+  }
+  .destacada {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 630px) {
+  h2 {
+    font-size: 20px;
+  }
+  .texto-destacada {
+    height: 30vh;
+  }
+  .destacada {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 530px) {
+  h2 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+  .btn-custom {
+    font-size: 8px;
+  }
+  .texto-destacada {
+    height: 25vh;
+  }
+  .destacada {
+    height: 25vh;
+  }
+  .card-img {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 430px) {
+  .card-img {
+    height: 35vh;
+  }
+}
