@@ -33,6 +33,7 @@ h5 {
   font-family: "Protest Strike", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 p {
   font-size: 15px;
@@ -55,7 +56,7 @@ p {
 
 .card-img {
   border-radius: 5px;
-  height: 45vh;
+  height: 50px;
   object-fit: cover;
 }
 
@@ -82,7 +83,7 @@ p {
     font-size: 25px;
   }
   h5 {
-    font-size: 20px;
+    font-size: 18px;
   }
   p {
     font-size: 12px;
@@ -108,7 +109,7 @@ p {
     font-size: 20px;
   }
   h5 {
-    font-size: 15px;
+    font-size: 18px;
   }
   .texto-destacada {
     height: 30vh;
@@ -127,7 +128,7 @@ p {
     font-size: 15px;
   }
   h5 {
-    font-size: 10px;
+    font-size: 15px;
   }
 
   p {
