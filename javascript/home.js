@@ -944,7 +944,7 @@ let arrayPeliculas = traerPeliculasLS();
             </a>
           </div>
           <a
-            href="detallePelicula.html"
+          href="detallePelicula.html?id=${peli.id}"
             class="text-decoration-none position-relative z-3"
           >
             <h5 class="letter-color-5 mt-2 text-center">${peli.titulo}</h5>
@@ -983,14 +983,14 @@ let arrayPeliculas = traerPeliculasLS();
               " - "
             )}</small></p>
             <a
-              href="detallePelicula.html"
+            href="detallePelicula.html?id=${peli.id}"
               class="fw-bold btn-custom text-decoration-none position-relative z-3"
             >
               Mas Detalles
             </a>
           </div>
           <a
-            href="detallePelicula.html"
+          href="detallePelicula.html?id=${peli.id}"
             class="text-decoration-none position-relative z-3"
           >
             <h5 class="letter-color-5 mt-2 text-center">${peli.titulo}</h5>
@@ -1029,14 +1029,14 @@ let arrayPeliculas = traerPeliculasLS();
               " - "
             )}</small></p>
             <a
-              href="detallePelicula.html"
+            href="detallePelicula.html?id=${peli.id}"
               class="fw-bold btn-custom text-decoration-none position-relative z-3"
             >
               Mas Detalles
             </a>
           </div>
           <a
-            href="detallePelicula.html"
+          href="detallePelicula.html?id=${peli.id}"
             class="text-decoration-none position-relative z-3"
           >
             <h5 class="letter-color-5 mt-2 text-center">${peli.titulo}</h5>
@@ -1075,14 +1075,14 @@ let arrayPeliculas = traerPeliculasLS();
               " - "
             )}</small></p>
             <a
-              href="detallePelicula.html"
+            href="detallePelicula.html?id=${peli.id}"
               class="fw-bold btn-custom text-decoration-none position-relative z-3"
             >
               Mas Detalles
             </a>
           </div>
           <a
-            href="detallePelicula.html"
+          href="detallePelicula.html?id=${peli.id}"
             class="text-decoration-none position-relative z-3"
           >
             <h5 class="letter-color-5 mt-2 text-center">${peli.titulo}</h5>
