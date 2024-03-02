@@ -937,7 +937,7 @@ let arrayPeliculas = traerPeliculasLS();
               " - "
             )}</small></p>
             <a
-              href="detallePelicula.html?${peli.id}"
+              href="detallePelicula.html?id=${peli.id}"
               class="fw-bold btn-custom text-decoration-none position-relative z-3"
             >
               Mas Detalles
