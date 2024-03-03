@@ -8,6 +8,10 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   }, */
   loop: true,
+  autoplay: {
+    delay: 2000,
+    pauseOnMouseEnter: true,
+  },
   watchOverFlow: true,
   breakpoints: {
     400: {
@@ -46,6 +50,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
     actor_principal: "John Travolta",
     disponible: true,
+    destacada: false,
   },
   {
     id: 2,
@@ -60,6 +65,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=sY1S34973zA",
     actor_principal: "Marlon Brando",
     disponible: true,
+    destacada: false,
   },
   {
     id: 3,
@@ -74,6 +80,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=V75dMMIW2B4",
     actor_principal: "Elijah Wood",
     disponible: true,
+    destacada: false,
   },
   {
     id: 4,
@@ -87,6 +94,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=zSWdZVtXT7E",
     actor_principal: "Matthew McConaughey",
     disponible: true,
+    destacada: false,
   },
   {
     id: 5,
@@ -100,6 +108,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=2KnZac176Hs",
     actor_principal: "Keanu Reeves",
     disponible: true,
+    destacada: false,
   },
   {
     id: 6,
@@ -114,6 +123,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=SUXWAEX2jlg",
     actor_principal: "Edward Norton",
     disponible: true,
+    destacada: false,
   },
   {
     id: 7,
@@ -128,6 +138,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=5PSNL1qE6VY",
     actor_principal: "Sam Worthington",
     disponible: true,
+    destacada: false,
   },
   {
     id: 8,
@@ -141,6 +152,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=O5riH5th16g",
     actor_principal: "Jack Nicholson",
     disponible: true,
+    destacada: false,
   },
   {
     id: 9,
@@ -154,6 +166,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=2e-eXJ6HgkQ",
     actor_principal: "Leonardo DiCaprio",
     disponible: true,
+    destacada: false,
   },
   {
     id: 10,
@@ -167,6 +180,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=YNh9Es8Ut6U",
     actor_principal: "Tom Hanks",
     disponible: true,
+    destacada: false,
   },
   {
     id: 11,
@@ -181,6 +195,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=YoHD9XEInc0",
     actor_principal: "Leonardo DiCaprio",
     disponible: true,
+    destacada: false,
   },
   {
     id: 12,
@@ -194,6 +209,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=0pdqf4P9MB8",
     actor_principal: "Ryan Gosling",
     disponible: true,
+    destacada: false,
   },
   {
     id: 13,
@@ -208,6 +224,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=S7bdkCT0P8E",
     actor_principal: "Emilio Estevez",
     disponible: true,
+    destacada: false,
   },
   {
     id: 14,
@@ -222,6 +239,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=Rvr68u6k5sI",
     actor_principal: "Anthony Gonzalez",
     disponible: true,
+    destacada: false,
   },
   {
     id: 15,
@@ -236,6 +254,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=lc0UehYemQA",
     actor_principal: "Sam Neill",
     disponible: true,
+    destacada: false,
   },
   {
     id: 16,
@@ -250,6 +269,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=cd-go0oBF4Y",
     actor_principal: "Jeff Bridges",
     disponible: true,
+    destacada: false,
   },
   {
     id: 17,
@@ -264,6 +284,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=qvsgGtivCgs",
     actor_principal: "Michael J. Fox",
     disponible: true,
+    destacada: false,
   },
   {
     id: 18,
@@ -277,6 +298,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=EqYiSlkvRuw",
     actor_principal: "Ivana Baquero",
     disponible: true,
+    destacada: false,
   },
   {
     id: 19,
@@ -291,6 +313,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=VG9AGf66tXM",
     actor_principal: "Bruce Willis",
     disponible: true,
+    destacada: false,
   },
   {
     id: 23,
@@ -305,6 +328,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=4sj1MT05lAA",
     actor_principal: "Matthew Broderick",
     disponible: true,
+    destacada: false,
   },
   {
     id: 25,
@@ -319,6 +343,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=EXeTwQWrcwY",
     actor_principal: "Christian Bale",
     disponible: true,
+    destacada: false,
   },
   {
     id: 26,
@@ -333,6 +358,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=6hB3S9bIaco",
     actor_principal: "Tim Robbins",
     disponible: true,
+    destacada: false,
   },
   {
     id: 32,
@@ -347,6 +373,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=qo5jJpHtI1Y",
     actor_principal: "Robert De Niro",
     disponible: true,
+    destacada: false,
   },
   {
     id: 33,
@@ -361,6 +388,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=W6Mm8Sbe__o",
     actor_principal: "Anthony Hopkins",
     disponible: true,
+    destacada: false,
   },
   {
     id: 34,
@@ -375,6 +403,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=JdRGC-w9syA",
     actor_principal: "Liam Neeson",
     disponible: true,
+    destacada: false,
   },
   {
     id: 35,
@@ -389,6 +418,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=Ki4haFrqSrw",
     actor_principal: "Tom Hanks",
     disponible: true,
+    destacada: false,
   },
   {
     id: 36,
@@ -404,6 +434,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=Q-b7B8tOAQU",
     actor_principal: "Russell Crowe",
     disponible: true,
+    destacada: false,
   },
   {
     id: 37,
@@ -418,6 +449,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=SGWvwjZ0eDc",
     actor_principal: "Leonardo DiCaprio",
     disponible: true,
+    destacada: false,
   },
   {
     id: 38,
@@ -431,6 +463,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=zwhP5b4tD6g",
     actor_principal: "Tom Hanks",
     disponible: true,
+    destacada: false,
   },
   {
     id: 52,
@@ -445,6 +478,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=MNpoTxeydiY",
     actor_principal: "Jonah Hill",
     disponible: true,
+    destacada: false,
   },
   {
     id: 53,
@@ -475,6 +509,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=FNppLrmdyug",
     actor_principal: "Kristen Wiig",
     disponible: true,
+    destacada: false,
   },
   {
     id: 55,
@@ -489,6 +524,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=tcdUhdOlz9M",
     actor_principal: "Zach Galifianakis",
     disponible: true,
+    destacada: false,
   },
   {
     id: 56,
@@ -504,6 +540,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=l13yPhimE3o",
     actor_principal: "Jim Carrey",
     disponible: true,
+    destacada: false,
   },
   {
     id: 57,
@@ -518,6 +555,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=h5dJxlLr0Gs",
     actor_principal: "Steve Carell",
     disponible: true,
+    destacada: false,
   },
   {
     id: 58,
@@ -533,6 +571,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=Yma-g4gTwlE",
     actor_principal: "James Franco",
     disponible: true,
+    destacada: false,
   },
   {
     id: 59,
@@ -548,6 +587,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=ZHDi_AnqwN4",
     actor_principal: "Jon Heder",
     disponible: true,
+    destacada: false,
   },
   {
     id: 60,
@@ -562,6 +602,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=OMitSKT-u_k",
     actor_principal: "Simon Pegg",
     disponible: true,
+    destacada: false,
   },
   {
     id: 61,
@@ -590,6 +631,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=YDGw1MTEe9k",
     actor_principal: "Ellen Burstyn",
     disponible: true,
+    destacada: false,
   },
   {
     id: 64,
@@ -604,6 +646,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=Wz719b9QUqY",
     actor_principal: "Anthony Perkins",
     disponible: true,
+    destacada: false,
   },
   {
     id: 65,
@@ -618,6 +661,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=V6wWKNij_1M",
     actor_principal: "Toni Collette",
     disponible: true,
+    destacada: false,
   },
   {
     id: 66,
@@ -647,6 +691,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=k10ETZ41q5o",
     actor_principal: "Vera Farmiga",
     disponible: true,
+    destacada: false,
   },
   {
     id: 68,
@@ -661,6 +706,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=HkZYbOH0ujw",
     actor_principal: "Maika Monroe",
     disponible: true,
+    destacada: false,
   },
   {
     id: 69,
@@ -676,6 +722,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=DzfpyUB60YY",
     actor_principal: "Daniel Kaluuya",
     disponible: true,
+    destacada: false,
   },
   {
     id: 70,
@@ -690,6 +737,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=szaLnKNWC-U",
     actor_principal: "Essie Davis",
     disponible: true,
+    destacada: false,
   },
   {
     id: 71,
@@ -720,6 +768,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=2TQ-pOvI6Xo",
     actor_principal: "Bruce Willis",
     disponible: true,
+    destacada: false,
   },
   {
     id: 73,
@@ -735,6 +784,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=akX3Is3qBpw",
     actor_principal: "Tom Hardy",
     disponible: true,
+    destacada: false,
   },
   {
     id: 78,
@@ -750,6 +800,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=C0BMx-qxsP4",
     actor_principal: "Keanu Reeves",
     disponible: true,
+    destacada: false,
   },
   {
     id: 79,
@@ -764,6 +815,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=7kSuas6mRpk",
     actor_principal: "Uma Thurman",
     disponible: true,
+    destacada: false,
   },
   {
     id: 80,
@@ -778,6 +830,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=FpKaB5dvQ4g",
     actor_principal: "Matt Damon",
     disponible: true,
+    destacada: false,
   },
   {
     id: 81,
@@ -793,6 +846,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=lwSysg9o7wE",
     actor_principal: "Arnold Schwarzenegger",
     disponible: true,
+    destacada: false,
   },
   {
     id: 82,
@@ -808,6 +862,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=0ZOcoxjeUYo",
     actor_principal: "Harrison Ford",
     disponible: true,
+    destacada: false,
   },
   {
     id: 83,
@@ -822,6 +877,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=eogpIG53Cis",
     actor_principal: "Harrison Ford",
     disponible: true,
+    destacada: false,
   },
   {
     id: 84,
@@ -851,6 +907,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=vKQi3bBA1y8",
     actor_principal: "Keanu Reeves",
     disponible: true,
+    destacada: false,
   },
   {
     id: 88,
@@ -866,6 +923,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=qYAETtIIClk",
     actor_principal: "Henry Thomas",
     disponible: true,
+    destacada: false,
   },
   {
     id: 91,
@@ -880,6 +938,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=ej3ioOneTy8",
     actor_principal: "Matt Damon",
     disponible: true,
+    destacada: false,
   },
   {
     id: 92,
@@ -895,6 +954,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=5nG7p5Xtrgo",
     actor_principal: "Jim Carrey",
     disponible: true,
+    destacada: false,
   },
 ];
 
