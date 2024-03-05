@@ -28,7 +28,7 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
       spaceBetween: 30,
     },
-    // when window width is >= 992px
+    // window width is >= 992px
     992: {
       slidesPerView: 5,
       spaceBetween: 40,
