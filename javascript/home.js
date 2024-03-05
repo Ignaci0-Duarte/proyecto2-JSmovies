@@ -1024,7 +1024,7 @@ const peliculaDestacada = buscarPeliculaDestacada();
 })();
 
 (() => {
-  const mapCards = () => {
+  const mapCardsD = () => {
     const divPeliculas = document.getElementById("cardPeliculas1");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Drama")
