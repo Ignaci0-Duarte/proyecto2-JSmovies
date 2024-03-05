@@ -50,7 +50,7 @@ const peliculas = [
     trailer: "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
     actor_principal: "John Travolta",
     disponible: true,
-    destacada: false,
+    destacada: true,
   },
   {
     id: 2,
@@ -973,6 +973,55 @@ const traerPeliculasLS = () => {
 };
 
 let arrayPeliculas = traerPeliculasLS();
+
+const buscarPeliculaDestacada = () => {
+  let peliculaDestacadaF = null;
+  arrayPeliculas.forEach((pelicula) => {
+    if (pelicula.destacada === true) {
+      peliculaDestacadaF = pelicula;
+    }
+  });
+  return peliculaDestacadaF;
+};
+
+const peliculaDestacada = buscarPeliculaDestacada();
+
+(() => {
+  const peliculaDestacadaInner = () => {
+    const divPeliculaDestacada = document.getElementById("divPeliDestacada");
+
+    const destacadaHTML = `
+    <img
+    src="${peliculaDestacada.portada}"
+    alt="banner pelicula destacada"
+    class="w-100 destacada"
+    />
+    <div class="texto-destacada d-flex flex-column bg-color-3 ps-5 justify-content-center">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h2 class="letter-color-5 fw-bold">${peliculaDestacada.titulo}</h2>
+          <p class="letter-color-5 fw-bold">${peliculaDestacada.sinopsis_corta}</p>
+          <a
+          href="detallePelicula.html?id=${peliculaDestacada.id}"
+            class="fw-bold btn-custom text-decoration-none"
+            >Mas Detalles</a
+          >
+        </div>
+        <img
+          src="${peliculaDestacada.portada}"
+          alt="portada de la pelicula destacada"
+          class="additional-image"
+        />
+      </div>
+    </div>
+    `;
+
+    divPeliculaDestacada.innerHTML = destacadaHTML;
+  };
+
+  // Llama a la función para mostrar los detalles cuando se carga la página
+  peliculaDestacadaInner();
+})();
 
 (() => {
   const mapCards = () => {
