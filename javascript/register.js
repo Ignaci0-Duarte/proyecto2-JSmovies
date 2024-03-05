@@ -97,7 +97,7 @@ const eventClick = (event) => {
         alert("Registro Exitoso");
 
         setTimeout(() => {
-          location.href = "login.html";
+          location.href = "../html/login.html";
         }),
           1000;
       } else {
@@ -121,7 +121,7 @@ const eventClick = (event) => {
         alert("Registro Exitoso");
 
         setTimeout(() => {
-          location.href = "login.html";
+          location.href = "../html/login.html";
         }),
           1000;
       }
