@@ -47,7 +47,7 @@ const peliculas = [
     genero: ["Crimen", "Drama"],
     portada:
       "https://lamadraza.ugr.es/wp-content/uploads/2013/04/ab061-pulp_fiction-740215304-large.jpg",
-    trailer: "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
+    trailer: "https://www.youtube.com/embed/s7EdQ4FqbhY?si=m597ykuH0MaVrsD6",
     actor_principal: "John Travolta",
     disponible: true,
     destacada: true,
