@@ -49,8 +49,8 @@ const peliculas = [
       "https://lamadraza.ugr.es/wp-content/uploads/2013/04/ab061-pulp_fiction-740215304-large.jpg",
     trailer: "https://www.youtube.com/watch?v=s7EdQ4FqbhY",
     actor_principal: "John Travolta",
-    disponible: true,
-    destacada: false,
+    disponible: false,
+    destacada: true,
   },
   {
     id: 2,
@@ -964,7 +964,7 @@ const peliculas = [
       localStorage.setItem("peliculas", JSON.stringify(peliculas));
     }
   };
-  cargaPeliculasLS(); // Llama a la función inmediatamente
+  cargaPeliculasLS();
 })();
 
 const traerPeliculasLS = () => {
@@ -975,7 +975,7 @@ const traerPeliculasLS = () => {
 let arrayPeliculas = traerPeliculasLS();
 
 (() => {
-  const mapCards = () => {
+  const mapCardsD = () => {
     const divPeliculas = document.getElementById("cardPeliculas1");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Drama")
@@ -1018,10 +1018,10 @@ let arrayPeliculas = traerPeliculasLS();
       .join("");
   };
 
-  mapCards(); // Llama a la función inmediatamente
+  mapCardsD(); // Llama a la función inmediatamente
 })();
 (() => {
-  const mapCards = () => {
+  const mapCardsCF = () => {
     const divPeliculas = document.getElementById("cardPeliculas2");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Ciencia Ficción")
@@ -1064,10 +1064,10 @@ let arrayPeliculas = traerPeliculasLS();
       .join("");
   };
 
-  mapCards(); // Llama a la función inmediatamente
+  mapCardsCF(); // Llama a la función inmediatamente
 })();
 (() => {
-  const mapCards = () => {
+  const mapCardsT = () => {
     const divPeliculas = document.getElementById("cardPeliculas3");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Terror")
@@ -1110,10 +1110,10 @@ let arrayPeliculas = traerPeliculasLS();
       .join("");
   };
 
-  mapCards(); // Llama a la función inmediatamente
+  mapCardsT(); // Llama a la función inmediatamente
 })();
 (() => {
-  const mapCards = () => {
+  const mapCardsC = () => {
     const divPeliculas = document.getElementById("cardPeliculas4");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Comedia")
@@ -1156,5 +1156,5 @@ let arrayPeliculas = traerPeliculasLS();
       .join("");
   };
 
-  mapCards(); // Llama a la función inmediatamente
+  mapCardsC(); // Llama a la función inmediatamente
 })();
