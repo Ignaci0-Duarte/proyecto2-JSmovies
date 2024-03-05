@@ -18,8 +18,6 @@ const obtenerPeliculaDetalle = () => {
 
 let peliculaDetalle = obtenerPeliculaDetalle();
 
-console.log(peliculaDetalle); // Objeto de la película con el ID correspondiente
-
 (() => {
   const mostrarDetalles = () => {
     const divPeliculaDetalle = document.getElementById("divDetallePelicula");
@@ -75,7 +73,7 @@ console.log(peliculaDetalle); // Objeto de la película con el ID correspondient
       </div>
     </div>
   </div>
-
+  <h1 class="text-white text-center">TRAILER</h1>
   <div class="container text-center mt-5 mb-5">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8 col-lg-6">
