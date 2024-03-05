@@ -960,9 +960,10 @@ const peliculas = [
 
 (() => {
   const cargaPeliculasLS = () => {
-    localStorage.setItem("peliculas", JSON.stringify(peliculas));
+    if (!localStorage.getItem("peliculas")) {
+      localStorage.setItem("peliculas", JSON.stringify(peliculas));
+    }
   };
-
   cargaPeliculasLS();
 })();
 
