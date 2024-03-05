@@ -969,7 +969,10 @@ const peliculas = [
 
 const traerPeliculasLS = () => {
   const arrayPeliculas = JSON.parse(localStorage.getItem("peliculas"));
-  return arrayPeliculas;
+  const peliculasDisponibles = arrayPeliculas.filter(
+    (pelicula) => pelicula.disponible
+  );
+  return peliculasDisponibles;
 };
 
 let arrayPeliculas = traerPeliculasLS();
