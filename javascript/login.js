@@ -52,9 +52,9 @@ const eventClick = (event) => {
         usuarios[indexUser].login = true;
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
         if (usuarioFiltrado[0].role === "admin") {
-          location.href = "admin.html";
+          location.href = "../html/admin.html";
         } else {
-          location.href = "login.html";
+          location.href = "../html/login.html";
         }
       } else {
         alert("Usuario y/o contraseña no coincide");
