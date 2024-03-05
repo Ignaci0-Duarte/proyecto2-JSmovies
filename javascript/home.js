@@ -964,7 +964,7 @@ const peliculas = [
       localStorage.setItem("peliculas", JSON.stringify(peliculas));
     }
   };
-  cargaPeliculasLS(); // Llama a la función inmediatamente
+  cargaPeliculasLS();
 })();
 
 const traerPeliculasLS = () => {
@@ -1067,10 +1067,10 @@ const peliculaDestacada = buscarPeliculaDestacada();
       .join("");
   };
 
-  mapCards(); // Llama a la función inmediatamente
+  mapCardsD(); // Llama a la función inmediatamente
 })();
 (() => {
-  const mapCards = () => {
+  const mapCardsCF = () => {
     const divPeliculas = document.getElementById("cardPeliculas2");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Ciencia Ficción")
@@ -1113,10 +1113,10 @@ const peliculaDestacada = buscarPeliculaDestacada();
       .join("");
   };
 
-  mapCards(); // Llama a la función inmediatamente
+  mapCardsCF(); // Llama a la función inmediatamente
 })();
 (() => {
-  const mapCards = () => {
+  const mapCardsT = () => {
     const divPeliculas = document.getElementById("cardPeliculas3");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Terror")
@@ -1159,10 +1159,10 @@ const peliculaDestacada = buscarPeliculaDestacada();
       .join("");
   };
 
-  mapCards(); // Llama a la función inmediatamente
+  mapCardsT(); // Llama a la función inmediatamente
 })();
 (() => {
-  const mapCards = () => {
+  const mapCardsC = () => {
     const divPeliculas = document.getElementById("cardPeliculas4");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Comedia")
@@ -1205,5 +1205,5 @@ const peliculaDestacada = buscarPeliculaDestacada();
       .join("");
   };
 
-  mapCards(); // Llama a la función inmediatamente
+  mapCardsC(); // Llama a la función inmediatamente
 })();

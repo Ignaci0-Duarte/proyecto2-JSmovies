@@ -1,0 +1,44 @@
+.transparent-table tbody,
+.transparent-table tr,
+.transparent-table td,
+.transparent-table th {
+  background-color: transparent !important;
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.btn-custom {
+  border: 1px solid #f7e018;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f7e018;
+  padding: 6px 6px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.btn-custom:hover {
+  background-color: #f7e018;
+  color: #000000;
+}
+
+@media (max-width: 730px) {
+  .transparent-table tbody,
+  .transparent-table tr,
+  .transparent-table td,
+  .transparent-table th {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .transparent-table tbody,
+  .transparent-table tr,
+  .transparent-table td,
+  .transparent-table th {
+    font-size: 12px;
+  }
+  .btn-custom {
+    font-size: 12px;
+  }
+}
