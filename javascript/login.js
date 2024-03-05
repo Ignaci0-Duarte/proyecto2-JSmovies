@@ -54,7 +54,7 @@ const eventClick = (event) => {
         if (usuarioFiltrado[0].role === "admin") {
           location.href = "../html/admin.html";
         } else {
-          location.href = "../html/login.html";
+          location.href = "../html/home.html";
         }
       } else {
         alert("Usuario y/o contraseña no coincide");
