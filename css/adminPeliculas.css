@@ -22,6 +22,17 @@
   color: #000000;
 }
 
+.check-color:checked {
+  background-color: #f7e018;
+  border-color: #f7e018;
+}
+
+.check-color:focus {
+  box-shadow: none;
+  border-color: #f7e018;
+  color: #f7e018;
+}
+
 @media (max-width: 730px) {
   .transparent-table tbody,
   .transparent-table tr,

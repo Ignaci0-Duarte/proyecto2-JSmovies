@@ -49,7 +49,7 @@ const destacadaChange = (idPeli) => {
               <td>
                 <div class="form-check form-switch">
                   <input
-                    class="form-check-input"
+                    class="form-check-input check-color"
                     type="checkbox"
                     role="switch"
                     id="flexSwitchCheckChecked"
@@ -60,7 +60,7 @@ const destacadaChange = (idPeli) => {
               </td>
               <td>
                 <input
-                  class="form-check-input"
+                  class="form-check-input check-color"
                   type="radio"
                   name="flexRadioDefault"
                   id="flexRadioDefault1"
