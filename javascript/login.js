@@ -51,8 +51,16 @@ const eventClick = (event) => {
 
         usuarios[indexUser].login = true;
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        const crearUsuarioActual = () => {
+          const usuarioActual = {
+            id: usuarioFiltrado[0].id,
+            role: usuarioFiltrado[0].role,
+          };
+          localStorage.setItem("usuarioActual", JSON.stringify(usuarioActual));
+        };
+        crearUsuarioActual();
         if (usuarioFiltrado[0].role === "admin") {
-          location.href = "../html/admin.html";
+          location.href = "../html/admin-user.html";
         } else {
           location.href = "../html/home.html";
         }
