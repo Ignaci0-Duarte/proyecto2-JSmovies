@@ -1,3 +1,12 @@
+const verificarUsuarioActual = () => {
+  const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
+  if (usuarioActual) {
+    window.location.href = "https://rollingcodejsmovies.netlify.app/html/404";
+  }
+};
+
+verificarUsuarioActual();
+
 const inputUser = document.getElementById("idInputUsuario");
 const inputPass = document.getElementById("idInputContrasenia");
 const buttonSendForm = document.getElementById("botonEnviarFormulario");
