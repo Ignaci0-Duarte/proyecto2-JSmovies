@@ -132,19 +132,22 @@ p {
   }
 
   p {
-    font-size: 10px;
+    font-size: 7px;
   }
   .btn-custom {
-    font-size: 8px;
+    font-size: 7px;
   }
   .texto-destacada {
     height: 25vh;
+  }
+  .texto-destacada > h2 {
+    font-size: 10px;
   }
   .destacada {
     height: 25vh;
   }
   .additional-image {
-    height: 23vh;
+    height: 20vh;
     margin-left: 2vh;
   }
   .card-img {
