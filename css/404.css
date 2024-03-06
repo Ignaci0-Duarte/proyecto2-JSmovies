@@ -1,0 +1,82 @@
+.gif {
+  border-radius: 50%;
+  height: 25vw;
+  width: 19vw;
+  object-fit: cover;
+}
+
+.n4 {
+  height: 25vw;
+  filter: invert(100%);
+}
+
+.txt-404 {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-custom {
+  border: 1px solid #f7e018;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f7e018;
+  padding: 6px 6px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.btn-custom:hover {
+  background-color: #f7e018;
+  color: #000000;
+}
+
+@media (max-width: 950px) {
+  .gif {
+    height: 30vw;
+    width: 23vw;
+  }
+
+  .n4 {
+    height: 30vw;
+  }
+}
+
+@media (max-width: 850px) {
+  .gif {
+    height: 35vw;
+    width: 26vw;
+  }
+
+  .n4 {
+    height: 35vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .gif {
+    height: 40vw;
+    width: 30vw;
+  }
+
+  .n4 {
+    height: 40vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .gif {
+    height: 45vw;
+    width: 34vw;
+  }
+
+  .n4 {
+    height: 45vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn-custom {
+    font-size: 12px;
+  }
+}
