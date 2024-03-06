@@ -1,0 +1,49 @@
+.buttonforms {
+  border: 1px solid #f7e018;
+  background-color: rgba(255, 255, 255, 0);
+  color: #f7e018;
+  padding: 7px 7px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.buttonforms:hover {
+  background-color: #f7e018;
+  color: #000000;
+}
+
+.textcolor {
+  color: #f7e018;
+}
+
+.emptyfield {
+  color: #ffffff90;
+}
+
+.w-form {
+  width: 30vw;
+}
+
+@media (max-width: 800px) {
+  .w-form {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .w-form {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .w-form {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 350px) {
+  .w-form {
+    width: 90vw;
+  }
+}

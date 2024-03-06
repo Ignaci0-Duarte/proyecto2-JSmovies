@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="peliculas, movies, series, netflix, prime, disney, marvel, terror, comedia, accion. ciencia ficcion, cuevana"
+    />
+    <meta
+      name="author"
+      content="Ignacio Duarte Martinez, Lisandro Nicolás Moreno, Lara Fernanda Espinosa"
+    />
+    <meta name="description" content="Pagina para visualizar peliculas" />
+    <link
+      rel="shortcut icon"
+      href="../resources/fotos/JavaScript-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/headerFooter.css" />
+    <link rel="stylesheet" href="../css/crearPelicula.css" />
+    <script
+      src="https://kit.fontawesome.com/671e6d4214.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>JS MOVIES</title>
+  </head>
+  <body class="bg-color-2">
+    <header>
+      <nav class="navbar bg-color-2">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <a class="navbar-brand" href="home.html">
+            <img
+              src="/resources/fotos/JavaScript-logo.png"
+              alt="JavaScript-logo"
+              width="30"
+            />
+          </a>
+          <h1 class="mb-0 h1 letter-color-1 fw-bold fs-2">JS MOVIES</h1>
+          <div class="btn-group dropstart">
+            <button
+              type="button"
+              class="btn btn-opciones"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-bars fs-4"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="home.html">Home</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="buscador.html">Buscador</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="admin-user.html"
+                  >Admin Usuarios</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="adminPeliculas.html"
+                  >Admin Peliculas</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="../index.html">Cerrar Sesion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="d-flex justify-content-center my-5">
+        <form class="w-form">
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label textcolor"
+              >Titulo</label
+            >
+            <input
+              type="text"
+              name="titulo"
+              class="form-control"
+              id="idInputTitulo"
+            />
+            <small class="emptyfield" id="idErrorTitulo"
+              >Completar el campo vacio</small
+            >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label textcolor">Año</label>
+            <input
+              type="number"
+              name="anio"
+              class="form-control"
+              id="idInputAnio"
+            />
+            <small class="emptyfield" id="idErrorAnio"
+              >Completar el campo vacio</small
+            >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label textcolor"
+              >Genero</label
+            >
+            <input
+              type="text"
+              name="genero"
+              class="form-control"
+              id="idInputGenero"
+            />
+            <small class="emptyfield" id="idErrorGenero"
+              >Completar el campo vacio</small
+            >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label textcolor"
+              >Actor Principal</label
+            >
+            <input
+              type="text"
+              name="actor"
+              class="form-control"
+              id="idInputActor"
+            />
+            <small class="emptyfield" id="idErrorActor"
+              >Completar el campo vacio</small
+            >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label textcolor"
+              >Sinopsis Corta</label
+            >
+            <textarea
+              name="sic"
+              class="form-control"
+              id="idInputSic"
+            ></textarea>
+            <small class="emptyfield" id="idErrorSic"
+              >Completar el campo vacio</small
+            >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label textcolor"
+              >Sinopsis Larga</label
+            >
+            <textarea
+              name="sil"
+              class="form-control"
+              id="idInputSil"
+              aria-label="With textarea"
+            ></textarea>
+            <small class="emptyfield" id="idErrorSil"
+              >Completar el campo vacio</small
+            >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label textcolor"
+              >Portada</label
+            >
+            <input
+              type="url"
+              name="portada"
+              class="form-control"
+              id="idInputPortada"
+            />
+            <small class="emptyfield" id="idErrorPortada"
+              >Completar el campo vacio</small
+            >
+          </div>
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label textcolor"
+              >Trailer</label
+            >
+            <input
+              type="url"
+              name="trailer"
+              class="form-control"
+              id="idInputTrailer"
+            />
+            <small class="emptyfield" id="idErrorTrailer"
+              >Completar el campo vacio</small
+            >
+          </div>
+          <div class="d-flex justify-content-center">
+            <button
+              type="submit"
+              class="btn buttonforms w-50"
+              id="botonCrearPelicula"
+            >
+              Crear Pelicula
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../javascript/crearPelicula.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
