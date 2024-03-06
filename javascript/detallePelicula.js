@@ -1,3 +1,12 @@
+const verificarUsuarioActual = () => {
+  const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
+  if (!usuarioActual) {
+    window.location.href = "https://rollingcodejsmovies.netlify.app/html/404";
+  }
+};
+
+verificarUsuarioActual();
+
 const traerPeliculasLS = () => {
   const arrayPeliculas = JSON.parse(localStorage.getItem("peliculas"));
   return arrayPeliculas;
