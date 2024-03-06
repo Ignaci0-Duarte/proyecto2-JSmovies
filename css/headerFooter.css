@@ -15,6 +15,25 @@ h1 {
   font-weight: 400;
   font-style: normal;
 }
+
+.btn-opciones {
+  background-color: #000000;
+  color: #f7e018;
+  border: none;
+}
+
+.btn-opciones:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-opciones:focus {
+  background-color: #000000;
+  color: #f7e018;
+  border: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
