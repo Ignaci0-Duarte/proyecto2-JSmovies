@@ -13,7 +13,7 @@
   top: 50%;
   transform: translate(0, -50%);
   z-index: 1;
-  max-width: 80%;
+  max-width: 60%;
   height: 50vh;
 }
 
@@ -113,6 +113,7 @@ p {
   }
   .texto-destacada {
     height: 30vh;
+    max-width: 80%;
   }
   .destacada {
     height: 30vh;
@@ -151,7 +152,7 @@ p {
     margin-left: 2vh;
   }
   .card-img {
-    height: 50vh;
+    height: 70vh;
   }
 }
 
