@@ -52,16 +52,6 @@ const eventClick = (event) => {
   event.preventDefault();
   const { user, pass, rpass } = formUser;
 
-  if (user.length < 4 || user.length > 20) {
-    alert("El usuario debe tener entre 4 y 20 caracteres.");
-    return;
-  }
-
-  if (pass.length < 6 || pass.length > 20) {
-    alert("La contraseña debe tener entre 6 y 20 caracteres.");
-    return;
-  }
-
   if (!user || !pass || !rpass) {
     errorUser.classList.remove("d-none");
     errorPass.classList.remove("d-none");
@@ -76,6 +66,17 @@ const eventClick = (event) => {
       );
       return;
     }
+
+    if (user.length < 4 || user.length > 20) {
+      alert("El usuario debe tener entre 4 y 20 caracteres.");
+      return;
+    }
+
+    if (pass.length < 6 || pass.length > 20) {
+      alert("La contraseña debe tener entre 6 y 20 caracteres.");
+      return;
+    }
+
     if (pass === rpass) {
       const usuarioExiste = usuarios.filter(
         (usuario) => usuario.userName === user
