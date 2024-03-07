@@ -28,3 +28,31 @@
 .textcolor {
   color: #f7e018;
 }
+
+.w-form {
+  width: 30vw;
+}
+
+@media (max-width: 800px) {
+  .w-form {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .w-form {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .w-form {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 350px) {
+  .w-form {
+    width: 90vw;
+  }
+}
