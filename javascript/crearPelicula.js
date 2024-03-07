@@ -36,7 +36,7 @@ const inputSic = document.getElementById("idInputSic");
 const inputSil = document.getElementById("idInputSil");
 const inputPortada = document.getElementById("idInputPortada");
 const inputTrailer = document.getElementById("idInputTrailer");
-const inputCrearPelicula = document.getElementById("idBotonCrearPelicula");
+const inputCrearPelicula = document.getElementById("idInputCrearPelicula");
 
 const errorTitulo = document.getElementById("idErrorTitulo");
 const errorAnio = document.getElementById("idErrorAnio");
