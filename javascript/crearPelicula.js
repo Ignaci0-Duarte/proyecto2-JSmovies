@@ -65,41 +65,43 @@ const formValues = (event) => {
   formPeliculas[name] = value;
 };
 
-const { titulo, anio, genero, actor, sic, sil, portada, trailer } =
-  formPeliculas;
+const eventClick = (event) => {
+  const { titulo, anio, genero, actor, sic, sil, portada, trailer } =
+    formPeliculas;
 
-if (peliculas.length > 0) {
-  /* Preguntamos si ese array tiene algo o esta vacio en el localstorage*/
-  const idPelicula = peliculas[peliculas.length - 1].id + 1;
-  const newPelicula = {
-    id: idPelicula,
-    titulo: titulo,
-    sinopsis_corta: sic,
-    sinopsis_larga: sil,
-    año: anio,
-    genero: genero,
-    portada: portada,
-    trailer: trailer,
-    actor_principal: actor,
-    disponible: true,
-    destacada: false,
-  };
-  /* En caso de que ya haya algo en el local ira por aca y hay que modificar el id con la formula  */
+  if (peliculas.length > 0) {
+    /* Preguntamos si ese array tiene algo o esta vacio en el localstorage*/
+    const idPelicula = peliculas[peliculas.length - 1].id + 1;
+    const newPelicula = {
+      id: idPelicula,
+      titulo: titulo,
+      sinopsis_corta: sic,
+      sinopsis_larga: sil,
+      año: anio,
+      genero: genero,
+      portada: portada,
+      trailer: trailer,
+      actor_principal: actor,
+      disponible: true,
+      destacada: false,
+    };
+    /* En caso de que ya haya algo en el local ira por aca y hay que modificar el id con la formula  */
 
-  peliculas.push(newPelicula);
+    peliculas.push(newPelicula);
 
-  inputTitulo.value = "";
-  inputAnio.value = "";
-  inputGenero.value = "";
-  inputActor.value = "";
-  inputSic.value = "";
-  inputSil.value = "";
-  inputPortada.value = "";
-  inputTrailer.value = ""; /* Para limpiar el campo del input  */
-  localStorage.setItem("peliculas", JSON.stringify(peliculas));
-  /* Le hacemos push al array de este objeto creado y lo almacenamos en el local */
-  alert("Creacion Exitosa");
-}
+    inputTitulo.value = "";
+    inputAnio.value = "";
+    inputGenero.value = "";
+    inputActor.value = "";
+    inputSic.value = "";
+    inputSil.value = "";
+    inputPortada.value = "";
+    inputTrailer.value = ""; /* Para limpiar el campo del input  */
+    localStorage.setItem("peliculas", JSON.stringify(peliculas));
+    /* Le hacemos push al array de este objeto creado y lo almacenamos en el local */
+    alert("Creacion Exitosa");
+  }
+};
 
 inputTitulo.addEventListener("input", (event) => formValues(event));
 inputAnio.addEventListener("input", (event) => formValues(event));
