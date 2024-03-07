@@ -65,7 +65,8 @@ const formValues = (event) => {
   formPeliculas[name] = value;
 };
 
-const { titulo, anio, genero, actor, sic, sil, portada, trailer } = formUser;
+const { titulo, anio, genero, actor, sic, sil, portada, trailer } =
+  formPeliculas;
 
 if (peliculas.length > 0) {
   /* Preguntamos si ese array tiene algo o esta vacio en el localstorage*/
