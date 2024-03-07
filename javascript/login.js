@@ -58,24 +58,27 @@ const eventClick = (event) => {
           (usuario) => usuario.userName === user
         );
 
-        usuarios[indexUser].login = true;
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-        const crearUsuarioActual = () => {
-          const usuarioActual = {
-            id: usuarioFiltrado[0].id,
-            role: usuarioFiltrado[0].role,
-          };
-          localStorage.setItem("usuarioActual", JSON.stringify(usuarioActual));
-        };
-        crearUsuarioActual();
         if (usuarioFiltrado[0].approved) {
+          usuarios[indexUser].login = true;
+          localStorage.setItem("usuarios", JSON.stringify(usuarios));
+          const crearUsuarioActual = () => {
+            const usuarioActual = {
+              id: usuarioFiltrado[0].id,
+              role: usuarioFiltrado[0].role,
+            };
+            localStorage.setItem(
+              "usuarioActual",
+              JSON.stringify(usuarioActual)
+            );
+          };
+          crearUsuarioActual();
           if (usuarioFiltrado[0].role === "admin") {
             location.href = "admin-user.html";
           } else {
             location.href = "home.html";
           }
         } else {
-          location.href = "error404.html";
+          location.href = "404.html";
         }
       } else {
         alert("Usuario y/o contraseña no coincide");
