@@ -68,10 +68,14 @@ const eventClick = (event) => {
           localStorage.setItem("usuarioActual", JSON.stringify(usuarioActual));
         };
         crearUsuarioActual();
-        if (usuarioFiltrado[0].role === "admin") {
-          location.href = "../html/admin-user.html";
+        if (usuarioFiltrado[0].approved) {
+          if (usuarioFiltrado[0].role === "admin") {
+            location.href = "admin-user.html";
+          } else {
+            location.href = "home.html";
+          }
         } else {
-          location.href = "../html/home.html";
+          location.href = "error404.html";
         }
       } else {
         alert("Usuario y/o contraseña no coincide");
