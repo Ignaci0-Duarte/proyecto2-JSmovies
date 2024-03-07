@@ -8,19 +8,14 @@ const verificarUsuarioActual = () => {
 verificarUsuarioActual();
 
 const verificarRolUsuario = () => {
-  // Obtener el objeto usuarioActual del localStorage
   const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
-
-  // Verificar si existe el usuarioActual y si su atributo role es "user"
   if (usuarioActual && usuarioActual.role === "user") {
-    // Aplicar la clase d-none a los elementos con los IDs especificados
     document.getElementById("adminU").classList.add("d-none");
     document.getElementById("adminP").classList.add("d-none");
     document.getElementById("crearP").classList.add("d-none");
   }
 };
 
-// Ejemplo de uso
 verificarRolUsuario();
 
 var swiper = new Swiper(".mySwiper", {
@@ -1047,7 +1042,6 @@ const peliculaDestacada = buscarPeliculaDestacada();
     divPeliculaDestacada.innerHTML = destacadaHTML;
   };
 
-  // Llama a la función para mostrar los detalles cuando se carga la página
   peliculaDestacadaInner();
 })();
 
@@ -1056,7 +1050,7 @@ const peliculaDestacada = buscarPeliculaDestacada();
     const divPeliculas = document.getElementById("cardPeliculas1");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Drama")
-    ); // Filtrar películas por el género "Drama"
+    );
     divPeliculas.innerHTML = peliculasDrama
       .map(
         (peli) => `
@@ -1095,14 +1089,14 @@ const peliculaDestacada = buscarPeliculaDestacada();
       .join("");
   };
 
-  mapCardsD(); // Llama a la función inmediatamente
+  mapCardsD();
 })();
 (() => {
   const mapCardsCF = () => {
     const divPeliculas = document.getElementById("cardPeliculas2");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Ciencia Ficción")
-    ); // Filtrar películas por el género "Drama"
+    );
     divPeliculas.innerHTML = peliculasDrama
       .map(
         (peli) => `
@@ -1141,14 +1135,14 @@ const peliculaDestacada = buscarPeliculaDestacada();
       .join("");
   };
 
-  mapCardsCF(); // Llama a la función inmediatamente
+  mapCardsCF();
 })();
 (() => {
   const mapCardsT = () => {
     const divPeliculas = document.getElementById("cardPeliculas3");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Terror")
-    ); // Filtrar películas por el género "Drama"
+    );
     divPeliculas.innerHTML = peliculasDrama
       .map(
         (peli) => `
@@ -1187,14 +1181,14 @@ const peliculaDestacada = buscarPeliculaDestacada();
       .join("");
   };
 
-  mapCardsT(); // Llama a la función inmediatamente
+  mapCardsT();
 })();
 (() => {
   const mapCardsC = () => {
     const divPeliculas = document.getElementById("cardPeliculas4");
     const peliculasDrama = arrayPeliculas.filter((peli) =>
       peli.genero.includes("Comedia")
-    ); // Filtrar películas por el género "Drama"
+    );
     divPeliculas.innerHTML = peliculasDrama
       .map(
         (peli) => `
@@ -1233,24 +1227,18 @@ const peliculaDestacada = buscarPeliculaDestacada();
       .join("");
   };
 
-  mapCardsC(); // Llama a la función inmediatamente
+  mapCardsC();
 })();
 
 const cerrarSesion = () => {
-  // Eliminar el usuarioActual del localStorage
   localStorage.removeItem("usuarioActual");
 
-  // Obtener el array de usuarios del localStorage
   const usuarios = JSON.parse(localStorage.getItem("usuarios"));
 
-  // Verificar si existe el array de usuarios
   if (usuarios) {
-    // Iterar sobre cada usuario y establecer el atributo "login" en false
     usuarios.forEach((usuario) => {
       usuario.login = false;
     });
-
-    // Actualizar el array de usuarios en el localStorage
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
   }
 };

@@ -10,20 +10,15 @@ const verificarUsuarioActual = () => {
 verificarUsuarioActual();
 
 const cerrarSesion = () => {
-  // Eliminar el usuarioActual del localStorage
   localStorage.removeItem("usuarioActual");
 
-  // Obtener el array de usuarios del localStorage
   const usuarios = JSON.parse(localStorage.getItem("usuarios"));
 
-  // Verificar si existe el array de usuarios
   if (usuarios) {
-    // Iterar sobre cada usuario y establecer el atributo "login" en false
     usuarios.forEach((usuario) => {
       usuario.login = false;
     });
 
-    // Actualizar el array de usuarios en el localStorage
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
   }
 };
@@ -70,7 +65,6 @@ const eventClick = (event) => {
     formPeliculas;
 
   if (peliculas.length > 0) {
-    /* Preguntamos si ese array tiene algo o esta vacio en el localstorage*/
     const idPelicula = peliculas[peliculas.length - 1].id + 1;
     const newPelicula = {
       id: idPelicula,
@@ -85,7 +79,6 @@ const eventClick = (event) => {
       disponible: true,
       destacada: false,
     };
-    /* En caso de que ya haya algo en el local ira por aca y hay que modificar el id con la formula  */
 
     peliculas.push(newPelicula);
 
@@ -96,9 +89,8 @@ const eventClick = (event) => {
     inputSic.value = "";
     inputSil.value = "";
     inputPortada.value = "";
-    inputTrailer.value = ""; /* Para limpiar el campo del input  */
+    inputTrailer.value = "";
     localStorage.setItem("peliculas", JSON.stringify(peliculas));
-    /* Le hacemos push al array de este objeto creado y lo almacenamos en el local */
     alert("Creacion Exitosa");
   }
 };

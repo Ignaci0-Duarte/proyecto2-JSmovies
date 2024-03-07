@@ -31,14 +31,12 @@ const destacadaChange = (idPeli) => {
   const indexPeli = arrayPeliculas.findIndex((peli) => peli.id === idPeli);
   if (arrayPeliculas[indexPeli].destacada == false) {
     const desactivarDestacadas = () => {
-      // Buscar y desactivar las películas destacadas en el array original
       arrayPeliculas.forEach((peli) => {
         if (peli.destacada === true) {
           peli.destacada = false;
         }
       });
       console.log("Se pasaron todas las destacadas a false");
-      // Devolver el array original con las modificaciones realizadas
       return arrayPeliculas;
     };
     desactivarDestacadas();
@@ -105,20 +103,15 @@ const guardarCambiosAP = () => {
 };
 
 const cerrarSesion = () => {
-  // Eliminar el usuarioActual del localStorage
   localStorage.removeItem("usuarioActual");
 
-  // Obtener el array de usuarios del localStorage
   const usuarios = JSON.parse(localStorage.getItem("usuarios"));
 
-  // Verificar si existe el array de usuarios
   if (usuarios) {
-    // Iterar sobre cada usuario y establecer el atributo "login" en false
     usuarios.forEach((usuario) => {
       usuario.login = false;
     });
 
-    // Actualizar el array de usuarios en el localStorage
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
   }
 };
