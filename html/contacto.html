@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es_AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Fernanda Espinosa,Ignacio Duarte Martinez,Lisandro Moreno" />
+    <meta name="keywords" content="Peliculas,Series,Videos" />
+    <meta name="description" content="Pagina de peliculas y series" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      src="https://kit.fontawesome.com/671e6d4214.js"
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/headerFooter.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <link
+      rel="shortcut icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png"
+      type="x-icon" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Contacto</title>
+  </head>
+  <body class="bg-black">
+    <header>
+      <nav class="navbar bg-color-2">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center">
+          <a class="navbar-brand" href="html/home.html">
+            <img
+              src="https://logodownload.org/wp-content/uploads/2022/04/javascript-logo-1.png"
+              alt="JavaScript-logo"
+              width="30" />
+          </a>
+          <h1 class="mb-0 h1 letter-color-1 fw-bold fs-2">JS MOVIES</h1>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="d-flex justify-content-center textcolor">Contacto</h1>
+      <p class="d-flex justify-content-center textcolor">
+        Complete el siguiente formulario para enviarnos su consulta.
+      </p>
+
+      <div class="d-flex justify-content-center my-3">
+        <form class="w-25">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label textcolor"
+              >Usuario</label
+            >
+            <input
+              type="text"
+              name="user"
+              class="form-control"
+              id="idInputUsuario"
+              aria-describedby="emailHelp" />
+            <small class="emptyfield" id="idErrorUsuario"
+              >Completar el campo vacio</small
+            >
+          </div>
+          <div class="mb-3">
+            <label
+              for="exampleInputPassword1"
+              class="form-label textcolor w-50">
+              Motivo de consulta
+            </label>
+            <div class="textarea-container">
+              <textarea
+                type="text"
+                name="pass"
+                class="form-control inputSize"
+                id="idInputContrasenia"></textarea>
+            </div>
+            <small class="emptyfield" id="idErrorContrasenia">
+              Completar el campo vacio
+            </small>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <button
+              type="submit"
+              name="send"
+              class="btn buttonforms w-50"
+              onclick="enviarMail()"
+              id="botonEnviarFormulario">
+              Enviar consulta
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-fluid bg-black">
+        <div class="row justify-content-center align-items-center">
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-1 mb-sm-0">
+            <a class="text-decoration-none" href="./index.html">
+              <h1 class="mb-0 h1 letter-color-1 fw-bold fs-1">JS MOVIES</h1>
+            </a>
+          </div>
+          <div
+            class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mt-1 mb-1 mb-sm-0">
+            <a class="text-decoration-none m-2" href="contacto.html">
+              <h4 class="text-white">Contacto</h4>
+            </a>
+          </div>
+          <div
+            class="col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mt-1">
+            <div class="d-flex justify-content-center">
+              <a
+                href="https://www.facebook.com/RollingCodeSchool/"
+                class="text-decoration-none">
+                <i class="fa-brands fa-facebook text-white fs-3 m-2"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/rollingcodeschool/?utm_source=ig_web_a_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+                class="text-decoration-none">
+                <i class="fa-brands fa-instagram text-white fs-3 m-2"></i>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-12 col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center mt-3">
+            <div class="d-flex justify-content-center py-1">
+              <p class="text-white">
+                © 2024 JS MOVIES. Todos los derechos reservados.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script src="../js/contacto.js"></script>
+  </body>
+</html>
